@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>
+            task4
+        </title>
+    </head>
+    <style>
+       
+    </style>
+   
+    <script>
+        function validateForm() {  
+          var pw1 = document.getElementById("pswd1").value;  
+          var pw2 = document.getElementById("pswd2").value;  
+         
+    if(pw1 != pw2) {  
+      document.getElementById("message2").innerHTML = "**Passwords are not same";  
+      return false;  
+    } else {  
+      alert ("Your password created successfully");  
+     
+    }  
+    
+        }  
+    </script>
+   
+    <body>
+        
+        <label>Full Name:</label>
+        <input type="text"></input><pre></pre>
+        <label>Username: </label>
+        <input type="text"></input><pre></pre>
+        <label> Password: </label>
+        <input type="password" id="pswd1" value="" name="pswd1" > </input>
+                <span id = "message1" style="color:red"></span><pre></pre>
+                <label>re password: </label>
+                <input type="password" id="pswd2" value="" name="pswd2"> </input>
+                <span id = "message2" style="color:red"></span><pre></pre>
+                
+              <label>Address</label>
+        <input type="text"></input><pre></pre>
+        <label>Age</label>
+        <input type="number"></input><pre></pre>
+        <label>Gender</label>
+        <select>
+        <option value="male">male</option>
+        <option value="female">female</option>
+    </select>
+        <pre></pre>
+    <button type="submit" onclick="return validateForm()">save</button>
+    
+    
+    
+    
+    
+    </body>
+</html>
